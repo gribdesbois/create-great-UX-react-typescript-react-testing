@@ -22,3 +22,7 @@ export type State = {
 }
 
 export const initialData: Data = []
+
+export type FetchAction = {
+  type: FetchActionType
+}
