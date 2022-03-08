@@ -63,7 +63,7 @@ describe('when dispatch FETCH_SUCCESS action', () => {
     expect(fetchReducer(initialState, action)).toEqual({
       isLoading: false,
       hasError: false,
-      data: initialData.push(product),
+      data: [product],
     })
   })
 })
