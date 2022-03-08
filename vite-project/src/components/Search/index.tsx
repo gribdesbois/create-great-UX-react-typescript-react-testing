@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { getProducts } from '../../api'
+import { useProductFetchAPI } from '../../hooks/useProductFetchAPI'
+import { State } from '../../types'
 
 const Search = () => {
   const [products, setProducts] = useState([])
-  const [isLoading, setIsLoading] = useState<boolean>(false)
-  const [hasError, setHasError] = useState<boolean>(false)
+  /* const [isLoading, setIsLoading] = useState<boolean>(false)
+  const [hasError, setHasError] = useState<boolean>(false) */
+  const { isLoading, hasError, data }: State = useProductFetchAPI()
 
   useEffect(() => {
     const fetchProducts = async () => {

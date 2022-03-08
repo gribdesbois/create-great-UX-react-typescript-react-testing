@@ -1,6 +1,6 @@
 import { FetchActionType, State } from '../../types'
 import { useEffect, useReducer } from 'react'
-import { fetchReducer } from '../../reducers/fetchReducer.tsx'
+import { fetchReducer } from '../../reducers/fetchReducer'
 
 export const useProductFetchAPI = (): State => {
   const initialState: State = {

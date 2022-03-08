@@ -20,3 +20,5 @@ export type State = {
   hasError: boolean
   data: Data
 }
+
+export const initialData: Data = []

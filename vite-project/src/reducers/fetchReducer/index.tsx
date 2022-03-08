@@ -1,4 +1,4 @@
-import { State, FetchActionType, FetchAction } from './../../types'
+import { State, FetchActionType, FetchAction } from '../../types'
 
 export const fetchReducer = (state: State, action: FetchAction): State => {
   switch (action.type) {
